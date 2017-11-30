@@ -19,3 +19,5 @@ source "${RECIPES_PATH}/dotfiles.sh"
 source "${RECIPES_PATH}/gnome-terminal.sh"
 source "${RECIPES_PATH}/font-patch.sh"
 source "${RECIPES_PATH}/rust.sh"
+# exa.sh must include after rust.sh
+source "${RECIPES_PATH}/exa.sh"
