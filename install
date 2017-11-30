@@ -21,3 +21,6 @@ source "${RECIPES_PATH}/font-patch.sh"
 source "${RECIPES_PATH}/rust.sh"
 # exa.sh must include after rust.sh
 source "${RECIPES_PATH}/exa.sh"
+
+# version managers
+source "${RECIPES_PATH}/rbenv.sh"
