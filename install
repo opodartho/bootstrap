@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+SCRIPT_ROOT="$(cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+INIT_PATH="${SCRIPT_ROOT}/init"
+
+for file in `\ls "${INIT_PATH}"`; do
+  source "${INIT_PATH}/${file}"
+done
+
+# execute custom installation scripts
+RECIPES_PATH="${SCRIPT_ROOT}/recipes"
+source "${RECIPES_PATH}/zsh.sh"
+source "${RECIPES_PATH}/zplug.sh"
+source "${RECIPES_PATH}/ag.sh"
+source "${RECIPES_PATH}/neovim.sh"
+source "${RECIPES_PATH}/tmux.sh"
+source "${RECIPES_PATH}/dotfiles.sh"
