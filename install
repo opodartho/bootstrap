@@ -24,3 +24,4 @@ source "${RECIPES_PATH}/exa.sh"
 
 # version managers
 source "${RECIPES_PATH}/rbenv.sh"
+source "${RECIPES_PATH}/pyenv.sh"
