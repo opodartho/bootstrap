@@ -28,3 +28,8 @@ source "${RECIPES_PATH}/rbenv.sh"
 source "${RECIPES_PATH}/pyenv.sh"
 source "${RECIPES_PATH}/nodenv.sh"
 source "${RECIPES_PATH}/exenv.sh"
+source "${RECIPES_PATH}/goenv.sh"
+
+# install vagrant
+source "${RECIPES_PATH}/virtualbox-5.sh"
+source "${RECIPES_PATH}/vagrant.sh"
