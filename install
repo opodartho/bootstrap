@@ -33,3 +33,6 @@ source "${RECIPES_PATH}/goenv.sh"
 # install vagrant
 source "${RECIPES_PATH}/virtualbox-5.sh"
 source "${RECIPES_PATH}/vagrant.sh"
+
+
+source "${RECIPES_PATH}/postgres.sh"
