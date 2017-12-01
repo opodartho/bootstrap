@@ -10,6 +10,7 @@ done
 
 # execute custom installation scripts
 RECIPES_PATH="${SCRIPT_ROOT}/recipes"
+source "${RECIPES_PATH}/sshd.sh" # install ssh server
 source "${RECIPES_PATH}/zsh.sh"
 source "${RECIPES_PATH}/zplug.sh"
 source "${RECIPES_PATH}/ag.sh"
