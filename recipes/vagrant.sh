@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-latest_version=`curl https://releases.hashicorp.com/vagrant/ | grep "/vagrant/" | head -1 | tr "/" " " | awk '{print $4}'`
 if which vagrant > /dev/null; then
+  latest_version=`curl https://releases.hashicorp.com/vagrant/ | grep "/vagrant/" | head -1 | tr "/" " " | awk '{print $4}'`
   installed_version=`vagrant -v | awk '{print $2}'`
   if [[ "${latest_version}" == "${installed_version}" ]]; then
     echo "Latest version of vagrant is already installed. Skipping ..."

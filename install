@@ -32,5 +32,10 @@ source "${RECIPES_PATH}/exenv.sh"
 source "${RECIPES_PATH}/goenv.sh"
 
 # install vagrant
-source "${RECIPES_PATH}/virtualbox-5.sh"
+# source "${RECIPES_PATH}/virtualbox-5.sh"
 source "${RECIPES_PATH}/vagrant.sh"
+
+# install docker
+source "${RECIPES_PATH}/docker.sh"
+source "${RECIPES_PATH}/docker-compose.sh"
+source "${RECIPES_PATH}/docker-machine.sh"
